@@ -1,6 +1,5 @@
-$("h2").click(function() {
-  $("p").addClass("close");
+$("section").click(function() {
+  $("section").removeClass("open");
+  $(this).addClass("open");
   console.log("test");
 });
-
-//removeClass("box")
