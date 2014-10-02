@@ -19,6 +19,8 @@
   background-color: gray;
   margin: 0px;
   color: white;
+  // transition: background-color 3s ease 0s;
+  // transition: font-size 3s ease 0s;
 }
 
 // Custom Styles
@@ -54,3 +56,8 @@ body {
 .box3 {
   background-color: yellow;
 }
+
+// h2:hover {
+//   background-color: pink;
+//   font-size: 200px;
+// }
