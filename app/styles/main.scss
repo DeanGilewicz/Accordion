@@ -8,7 +8,6 @@
 @mixin box {
   margin: 0px auto;
   width: 600px;
-  font-size: 15px;
   border-radius: 6px;
   border: 3px solid black;
 }
@@ -23,11 +22,18 @@
   // transition: font-size 3s ease 0s;
 }
 
+  @mixin contentBox {
+    font-size: 15px;
+    height: 0px;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
 // JQUERY
 
-.open p {
-  height: 0px;
-  overflow: hidden;
+.open article {
+  height: 200px;
 }
 
 
@@ -39,32 +45,18 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.box1,
-.box2,
-.box3 {
+.boxCon {
   @include box;
 
   h2 {
     @include header;
   }
+}
 
-  p {
-    padding: 0px;
-    margin: 0px;
+article {
+    @include contentBox;
   }
-}
 
-.box1 {
-  background-color: red;
-}
-
-.box2 {
-  background-color: green;
-}
-
-.box3 {
-  background-color: yellow;
-}
 
 // h2:hover {
 //   background-color: pink;
