@@ -1,3 +1,3 @@
-## Yo, I'm a Readme
+## Accordion
 
-You should probably update me so people looking at your code have an idea what it is being used for :)
+A jQuery Accordion created using addClass & removeClass with CSS3 transitions.
